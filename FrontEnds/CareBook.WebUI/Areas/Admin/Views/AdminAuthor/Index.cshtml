@@ -1,0 +1,76 @@
+﻿@model List<ResultAuthorDto>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayaout/Index.cshtml";
+	int count = 0;
+}
+<style>
+	.full-width-button {
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+	background-color: #28a745; /* Yeşil renk */
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	}
+
+	.full-width-button:hover {
+	background-color: #218838; /* Hover durumunda daha koyu yeşil */
+	}
+</style>
+<div class="page-content">
+	<div class="container-fluid">
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Yazar Listesi</h4>
+					<p class="card-subtitle mb-4">
+						<code class="highlighter-rouge">
+							Mevcut yazar bilgilerinizi aşağıda ki alandan ekleme , silme ve güncelleme işlemleri yapabilirsiniz.
+						</code>
+					</p>
+					<div class="table-responsive">
+						<table class="table table-dark mb-0">
+							<thead>
+
+								<tr>
+									<th>#</th>
+									<th>Yazar Görseli<h>
+									<th>Yazar Ad Soyad</th>
+									<th>Sil</th>
+									<th>Güncelle</th>
+									<th>Yazar Blogları</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td><img src="@item.ImageUrl" width="50"height="50" style="margin-right:20"/></td>
+										<td>@item.Name</td>
+										<td><a href="/Admin/AdminAuthor/DeleteAuthor/@item.AuthorID" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/Admin/AdminAuthor/UpdateAuthor/@item.AuthorID" class="btn btn-outline-warning">Güncelle</a></td>
+										<td><a href="/Admin/AdminAuthor/#/@item.AuthorID" class="btn btn-outline-info">Yazarın Blogları</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<br />
+						<div class="container-fluid p-0">
+							<a href="/Admin/AdminAuthor/CreateAuthor" class="btn btn-success d-block w-100 py-3 fs-4 fw-bold">YENİ YAZAR EKLE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

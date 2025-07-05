@@ -1,0 +1,196 @@
+﻿@model CreateCarDto
+@{
+	ViewData["Title"] = "CreateCar";
+	Layout = "~/Views/AdminLayaout/Index.cshtml";
+}
+
+
+<div class="page-content">
+	<div class="container-fluid">
+		<div class="col-xl-12">
+			<div class="card-body">
+				<h4 class="card-title">Yeni Araç Girişi</h4>
+                <p class="card-subtitle mb-4">
+                    <code class="highlighter-rouge">
+                       Yeni araç veri girişlerini aşağıda ki alandan yapabilirsiniz.
+                    </code>.
+                </p>
+				<form method="post">
+					<div class="form-group">
+						<label for="exampleInputBrand">Marka</label>
+						@Html.DropDownListFor(x => x.BrandID, (List<SelectListItem>)ViewBag.BrandValues,new {@class="form-control"})
+					</div>
+					<div class="form-group">
+						<label for="exampleInputModel">Model </label>
+						<input type="text" class="form-control" id="exampleInputModel" asp-for="Model" placeholder="Model">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputCoverImage">Kapak Fotoğrafı </label>
+						<input type="text" class="form-control" id="exampleInputCoverImage" asp-for="CoverImageUrl" placeholder="Kapak Fotoğraf Linki Giriniz.">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputKm">KM </label>
+						<input type="text" class="form-control" id="exampleInputKm" asp-for="Km" placeholder="KM Bilgisi Giriniz.">
+					</div>
+                    <div class="container-fluid p-0 mb-4">
+                        <div class="form-group p-4 rounded-0 shadow-sm" style="background: #f8f9fa; border: 1px solid #e9ecef;">
+                            <label for="transmissionType" class="form-label mb-3 fw-semibold" style="color: #495057; font-size: 0.75rem;">
+                                VİTES TÜRÜ <span class="text-danger">*</span>
+                            </label>
+                            <div class="dropdown-custom w-100">
+                                <select class="form-select-custom w-100" id="transmissionType" asp-for="Transmission" required>
+                                    <option value="" disabled selected hidden>Lütfen seçim yapınız</option>
+                                    <option value="Otomatik">🏎️ Otomatik</option>
+                                    <option value="Manuel">🛠️ Manuel</option>
+                                </select>
+                                <span class="dropdown-arrow">⌵</span>
+                            </div>
+                            <div class="invalid-feedback">Lütfen vites türünü seçiniz</div>
+                        </div>
+                    </div>
+
+                    <style>
+                        .dropdown-custom {
+                            position: relative;
+                        }
+
+                        .form-select-custom {
+                            width: 100%;
+                            padding: 14px 16px;
+                            font-size: 0.75rem;
+                            border: 1px solid #ced4da;
+                            border-radius: 15px;
+                            background-color: white;
+                            color: #212529;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+                        }
+
+                            .form-select-custom:invalid {
+                                border-color: #dc3545;
+                            }
+
+                            .form-select-custom:hover {
+                                border-color: #adb5bd;
+                                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                            }
+
+                            .form-select-custom:focus {
+                                outline: none;
+                                border-color: #86b7fe;
+                                box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+                            }
+
+                        .dropdown-arrow {
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                            transform: translateY(-50%);
+                            color: #6c757d;
+                            pointer-events: none;
+                        }
+
+                        .text-danger {
+                            color: #dc3545;
+                        }
+
+                        .invalid-feedback {
+                            display: none;
+                            width: 100%;
+                            margin-top: 0.25rem;
+                            font-size: 0.875em;
+                            color: #dc3545;
+                        }
+
+                        .was-validated .form-select-custom:invalid ~ .invalid-feedback {
+                            display: block;
+                        }
+                    </style>
+                    <script>
+                        // Form gönderilirken validasyon kontrolü
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const form = document.querySelector('form');
+                            if(form) {
+                                form.addEventListener('submit', function(event) {
+                                    if (!this.checkValidity()) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    this.classList.add('was-validated');
+                                }, false);
+                            }
+                        });
+                    </script>
+					<div class="form-group">
+						<label for="exampleInputSeat">Koltuk Sayısı </label>
+						<input type="number" class="form-control" id="exampleInputSeat" asp-for="Seat" placeholder="Koltuk Sayısını Seçiniz">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputLuagge">Bagaj Sayısı </label>
+						<input type="number" class="form-control" id="exampleInputLuagge" asp-for="Luggage" placeholder="Bagaj Sayısını Seçiniz">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputFuel">Yakıt Türü</label>
+						<select class="form-control" id="exampleInputFuel" asp-for="Fuel">
+							<option value="">Yakıt Türü Seçiniz</option>
+							<option value="Benzin">Benzin</option>
+                            <option value="Benzin"> Lpg & Benzin </option>
+							<option value="Dizel">Dizel</option>
+							<option value="LPG">LPG</option>
+							<option value="Elektrik">Elektrik</option>
+							<option value="Hibrit">Hibrit (Benzin/Elektrik)</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputLuagge">Büyük Kapak Fotoğgrafı </label>
+						<input type="text" class="form-control" id="exampleInputLuagge" asp-for="BigImageUrl" placeholder="Araç Detayında Gözükecek Büyük Görsel">
+					</div>
+                    <div class="container-fluid p-0 mt-4">
+                        <button type="submit" class="full-width-btn">
+                            <span class="btn-icon">✓</span>
+                            <span class="btn-text">ARACI KAYDET</span>
+                        </button>
+                    </div>
+                    <style>
+                        .full-width-btn {
+                            width: 100%;
+                            padding: 18px;
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                            color: white;
+                            text-transform: uppercase;
+                            letter-spacing: 0.5px;
+                            background: linear-gradient(to right, #28a745, #28a745);
+                            border: none;
+                            border-radius: 8px;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 12px;
+                            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+                        }
+
+                            .full-width-btn:hover {
+                                background: linear-gradient(to right, #28a745, #28a745);
+                                transform: translateY(-2px);
+                                box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+                            }
+
+                            .full-width-btn:active {
+                                transform: translateY(0);
+                            }
+
+                        .btn-icon {
+                            font-size: 1.3rem;
+                            font-weight: bold;
+                        }
+                    </style>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

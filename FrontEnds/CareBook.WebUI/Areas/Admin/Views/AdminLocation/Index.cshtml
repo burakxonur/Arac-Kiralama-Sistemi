@@ -1,0 +1,75 @@
+﻿@model List<ResultLocationDto>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayaout/Index.cshtml";
+	int count = 0;
+}
+
+<style>
+	.full-width-button {
+		display: block;
+		width: 100%;
+		padding: 20px 0;
+		background-color: #28a745; /* Yeşil renk */
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: bold;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+		.full-width-button:hover {
+			background-color: #218838; /* Hover durumunda daha koyu yeşil */
+		}
+</style>
+<div class="page-content">
+	<div class="container-fluid">
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Lokasyonlar Listesi</h4>
+					<p class="card-subtitle mb-4">
+						<code class="highlighter-rouge">
+							Ana sayfa ve araç kiralama sayfasında ki mevcut araç bırakma ,alma ve bakım yapılan loksayonlar belirtmelisiniz.
+
+						</code>.
+					</p>
+					<div class="table-responsive">
+						<table class="table table-dark mb-0">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Lokasyon</th>
+									<th>Sil</th>
+									<th>Güncelle</th>
+									<th>Konumu Aç</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.Name</td>
+										<td><a href="/Admin/AdminLocation/DeleteLocation/@item.LocationID" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/Admin/AdminLocation/UpdateLocation/@item.LocationID" class="btn btn-outline-warning">Güncelle</a></td>
+										<td><a href="/Admin/AdminLocation/LocationDetail/@item.LocationID" class="btn btn-outline-info">Konum Gör</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<br />
+						<div class="container-fluid p-0">
+							<a href="/Admin/AdminLocation/CreateLocation" class="btn btn-success d-block w-100 py-3 fs-4 fw-bold">LOKASYON EKLE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

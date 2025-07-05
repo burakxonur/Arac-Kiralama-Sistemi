@@ -1,0 +1,81 @@
+﻿@model List<ResultTestimonialDto>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayaout/Index.cshtml";
+	int count = 0;
+}
+
+<style>
+	.full-width-button {
+		display: block;
+		width: 100%;
+		padding: 20px 0;
+		background-color: #28a745; /* Yeşil renk */
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: bold;
+		border: none;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+		.full-width-button:hover {
+			background-color: #218838; /* Hover durumunda daha koyu yeşil */
+		}
+</style>
+<div class="page-content">
+	<div class="container-fluid">
+		<div class="col-xl-12">
+			<div class="card">
+				<div class="card-body">
+					<h4 class="card-title">Referanslar Listesi</h4>
+					<p class="card-subtitle mb-4">
+						<code class="highlighter-rouge">
+							Ana sayfada bulunan mevcut referanslarınızı aşağıdan ekleme silme ve güncelleme işlemlerini aşağıdan yapabilirsiniz.
+
+						</code>.
+					</p>
+					<div class="table-responsive">
+						<table class="table table-dark mb-0">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Adı Soyadı</th>
+									<th>Ünvan</th>
+									<th>Yorum</th>
+									<th>Fotoğrafı</th>
+									<th>Sil</th>
+									<th>Güncelle</th>
+
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.Name</td>
+										<td>@item.Title</td>
+										<td>@item.Comment</td>
+										<td>@item.ImageUrl</td>
+										<td><a href="/Admin/AdminTestimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-outline-danger">Sil</a></td>
+										<td><a href="/Admin/AdminTestimonial/UpdateTestimonial/@item.TestimonialID" class="btn btn-outline-warning">Güncelle</a></td>
+
+									</tr>
+								}
+							</tbody>
+						</table>
+						<br />
+						<div class="container-fluid p-0">
+							<a href="/Admin/AdminTestimonial/CreateTestimonial" class="btn btn-success d-block w-100 py-3 fs-4 fw-bold">REFERANS EKLE</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

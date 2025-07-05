@@ -1,0 +1,1677 @@
+[
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AboutsController",
+    "Method": "AboutList",
+    "RelativePath": "api/Abouts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AboutsController",
+    "Method": "CreateAbout",
+    "RelativePath": "api/Abouts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.AboutComments.CreateAboutCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AboutsController",
+    "Method": "DeleteAbout",
+    "RelativePath": "api/Abouts",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AboutsController",
+    "Method": "UpdateAbout",
+    "RelativePath": "api/Abouts",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.AboutComments.UpdateAboutCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AboutsController",
+    "Method": "GetAbout",
+    "RelativePath": "api/Abouts/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AuthorsController",
+    "Method": "AuthorList",
+    "RelativePath": "api/Authors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AuthorsController",
+    "Method": "CreateAuthor",
+    "RelativePath": "api/Authors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.AuthorCommands.CreateAuthorCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AuthorsController",
+    "Method": "RemoveAuthor",
+    "RelativePath": "api/Authors",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AuthorsController",
+    "Method": "UpdateAuthor",
+    "RelativePath": "api/Authors",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.AuthorCommands.UpdateAuthorCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.AuthorsController",
+    "Method": "GetAuthor",
+    "RelativePath": "api/Authors/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BannerController",
+    "Method": "BannerList",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BannerController",
+    "Method": "CreateBanner",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.BannerCommads.CreateBannerCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BannerController",
+    "Method": "DeleteBanner",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BannerController",
+    "Method": "UpdateBanner",
+    "RelativePath": "api/Banner",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.BannerCommads.UpdateBannerCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BannerController",
+    "Method": "GetBanner",
+    "RelativePath": "api/Banner/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "BlogList",
+    "RelativePath": "api/Blog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "CreateBlog",
+    "RelativePath": "api/Blog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.BlogCommands.CreateBlogCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "RemoveBlog",
+    "RelativePath": "api/Blog",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "UpdateBlog",
+    "RelativePath": "api/Blog",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.BlogCommands.UpdateBlogCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "GetBlog",
+    "RelativePath": "api/Blog/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "GetAllBlogsWithAuthorList",
+    "RelativePath": "api/Blog/GetAllBlogsWithAuthorList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "GetBlogByAuthorID",
+    "RelativePath": "api/Blog/GetBlogByAuthorID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BlogController",
+    "Method": "GetLast3BlogWithAuthorsList",
+    "RelativePath": "api/Blog/GetLast3BlogWithAuthorsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BrandsController",
+    "Method": "BrandList",
+    "RelativePath": "api/Brands",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BrandsController",
+    "Method": "CreateBrand",
+    "RelativePath": "api/Brands",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.BrandCommands.CreateBrandCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BrandsController",
+    "Method": "DeleteBrand",
+    "RelativePath": "api/Brands",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BrandsController",
+    "Method": "UpdateBrand",
+    "RelativePath": "api/Brands",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.BrandCommands.UpdateBrandCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.BrandsController",
+    "Method": "GetBrand",
+    "RelativePath": "api/Brands/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarDescriptionController",
+    "Method": "CarDescriptionList",
+    "RelativePath": "api/CarDescription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarFeaturesController",
+    "Method": "CarFeatureListByCarId",
+    "RelativePath": "api/CarFeatures",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarFeaturesController",
+    "Method": "CreateCarFeatureByCarId",
+    "RelativePath": "api/CarFeatures",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.CarFeatureCommands.CreateCarFeatureByCarCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarFeaturesController",
+    "Method": "CarFeatureChangeAvailableToFalse",
+    "RelativePath": "api/CarFeatures/CarFeatureChangeAvailableToFalse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarFeaturesController",
+    "Method": "CarFeatureChangeAvailableToTrue",
+    "RelativePath": "api/CarFeatures/CarFeatureChangeAvailableToTrue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarPricingsController",
+    "Method": "GetCarPricingWithCarList",
+    "RelativePath": "api/CarPricings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarPricingsController",
+    "Method": "GetCarPricingWithTimePeriodList",
+    "RelativePath": "api/CarPricings/GetCarPricingWithTimePeriodList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "CarList",
+    "RelativePath": "api/Cars",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "CreateCar",
+    "RelativePath": "api/Cars",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.CarCommands.CreateCarCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "UpdateCar",
+    "RelativePath": "api/Cars",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.CarCommands.UpdateCarCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "GetCar",
+    "RelativePath": "api/Cars/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "DeleteCar",
+    "RelativePath": "api/Cars/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "GetCarWithBrand",
+    "RelativePath": "api/Cars/GetCarWithBrand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CarsController",
+    "Method": "GetLast5CarWithBrand",
+    "RelativePath": "api/Cars/GetLast5CarWithBrand",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CategoryController",
+    "Method": "CategoryList",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.CategoryCommands.CreateCategoryCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CategoryController",
+    "Method": "DeleteCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CategoryController",
+    "Method": "UpdateCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.CategoryCommands.UpdateCategoryCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CategoryController",
+    "Method": "GetCategory",
+    "RelativePath": "api/Category/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "CommentList",
+    "RelativePath": "api/Comment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "CreateComment",
+    "RelativePath": "api/Comment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comment",
+        "Type": "CareBook.Domain.Entities.Comment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "RemoveComment",
+    "RelativePath": "api/Comment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "UpdateComment",
+    "RelativePath": "api/Comment",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comment",
+        "Type": "CareBook.Domain.Entities.Comment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "GetComment",
+    "RelativePath": "api/Comment/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.CommentController",
+    "Method": "CommentListByBlog",
+    "RelativePath": "api/Comment/CommentListByBlog",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ContactController",
+    "Method": "ContactList",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ContactController",
+    "Method": "CreateContact",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.ContactCommands.CreateContactCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ContactController",
+    "Method": "DeleteContact",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ContactController",
+    "Method": "UpdateContact",
+    "RelativePath": "api/Contact",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.CQRS.Comments.ContactCommands.UpdateContactCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ContactController",
+    "Method": "GetContact",
+    "RelativePath": "api/Contact/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FeaturesController",
+    "Method": "FeatureList",
+    "RelativePath": "api/Features",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FeaturesController",
+    "Method": "CreateFeature",
+    "RelativePath": "api/Features",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.FeatureCommands.CreateFeatureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FeaturesController",
+    "Method": "UpdateFeature",
+    "RelativePath": "api/Features",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.FeatureCommands.UpdateFeatureCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FeaturesController",
+    "Method": "GetFeature",
+    "RelativePath": "api/Features/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FeaturesController",
+    "Method": "DeleteFeature",
+    "RelativePath": "api/Features/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FooterAddressController",
+    "Method": "FooterAddressList",
+    "RelativePath": "api/FooterAddress",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FooterAddressController",
+    "Method": "CreateFooterAddress",
+    "RelativePath": "api/FooterAddress",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.FooterAddressCommands.CreateFooterAddressCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FooterAddressController",
+    "Method": "RemoveFooterAddress",
+    "RelativePath": "api/FooterAddress",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FooterAddressController",
+    "Method": "UpdateFooterAddress",
+    "RelativePath": "api/FooterAddress",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commnad",
+        "Type": "CareBook.Application.Features.Mediator.Commands.FooterAddressCommands.UpdateFooterAddressCommnad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.FooterAddressController",
+    "Method": "GetFooterAddress",
+    "RelativePath": "api/FooterAddress/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LocationController",
+    "Method": "LocationList",
+    "RelativePath": "api/Location",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LocationController",
+    "Method": "CreateLocation",
+    "RelativePath": "api/Location",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.LocationCommands.CreateLocationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LocationController",
+    "Method": "RemoveLocation",
+    "RelativePath": "api/Location",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LocationController",
+    "Method": "UpdateLocation",
+    "RelativePath": "api/Location",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.LocationCommands.UpdateLocationCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LocationController",
+    "Method": "GetLocation",
+    "RelativePath": "api/Location/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.LoginController",
+    "Method": "Index",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "CareBook.Application.Features.Mediator.Queries.AppUserQueries.GetCheckAppUserQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.PricingController",
+    "Method": "PricingList",
+    "RelativePath": "api/Pricing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.PricingController",
+    "Method": "CreatePricing",
+    "RelativePath": "api/Pricing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.PricingCommands.CreatePricingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.PricingController",
+    "Method": "RemovePricing",
+    "RelativePath": "api/Pricing",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.PricingController",
+    "Method": "UpdatePricing",
+    "RelativePath": "api/Pricing",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.PricingCommands.UpdatePricingCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.PricingController",
+    "Method": "GetPricing",
+    "RelativePath": "api/Pricing/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.RegistersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/Registers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.RegisterCommands.CreateAppUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.RentACarController",
+    "Method": "GetRentACarLocationList",
+    "RelativePath": "api/RentACar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "available",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ReservationsController",
+    "Method": "CreateReservation",
+    "RelativePath": "api/Reservations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.ReservationCommands.CreateReservationCommands",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ServiceController",
+    "Method": "ServiceList",
+    "RelativePath": "api/Service",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ServiceController",
+    "Method": "CreateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.ServiceCommands.CreateServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ServiceController",
+    "Method": "RemoveService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ServiceController",
+    "Method": "UpdateService",
+    "RelativePath": "api/Service",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.ServiceCommands.UpdateServiceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.ServiceController",
+    "Method": "GetService",
+    "RelativePath": "api/Service/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.SocialMediaController",
+    "Method": "SocialMediaList",
+    "RelativePath": "api/SocialMedia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.SocialMediaController",
+    "Method": "CreateSocialMedia",
+    "RelativePath": "api/SocialMedia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.SocialMediaCommands.CreateSocialMediaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.SocialMediaController",
+    "Method": "RemoveSocialMedia",
+    "RelativePath": "api/SocialMedia",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.SocialMediaController",
+    "Method": "UpdateSocialMedia",
+    "RelativePath": "api/SocialMedia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.SocialMediaCommands.UpdateSocialMediaCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.SocialMediaController",
+    "Method": "GetSocialMedia",
+    "RelativePath": "api/SocialMedia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "BlogTitleByMaxBlogComment",
+    "RelativePath": "api/Statistics/BlogTitleByMaxBlogComment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "BrandNameByMaxCar",
+    "RelativePath": "api/Statistics/BrandNameByMaxCar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetAuthorCount",
+    "RelativePath": "api/Statistics/GetAuthorCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetAvgRentPriceForDay",
+    "RelativePath": "api/Statistics/GetAvgRentPriceForDay",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetAvgRentPriceForMountly",
+    "RelativePath": "api/Statistics/GetAvgRentPriceForMountly",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetAvgRentPriceForWeekly",
+    "RelativePath": "api/Statistics/GetAvgRentPriceForWeekly",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetBlogCount",
+    "RelativePath": "api/Statistics/GetBlogCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetBrandCount",
+    "RelativePath": "api/Statistics/GetBrandCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarBrandandModelByRentPriceDailyMax",
+    "RelativePath": "api/Statistics/GetCarBrandandModelByRentPriceDailyMax",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarBrandandModelByRentPriceDailyMin",
+    "RelativePath": "api/Statistics/GetCarBrandandModelByRentPriceDailyMin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarCount",
+    "RelativePath": "api/Statistics/GetCarCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarCountByFuelElectric",
+    "RelativePath": "api/Statistics/GetCarCountByFuelElectric",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarCountByFuelGasolineOrDiesel",
+    "RelativePath": "api/Statistics/GetCarCountByFuelGasolineOrDiesel",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarCountByKmSmallerThen1000",
+    "RelativePath": "api/Statistics/GetCarCountByKmSmallerThen1000",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetCarCountByTransmissionIsAuto",
+    "RelativePath": "api/Statistics/GetCarCountByTransmissionIsAuto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.StatisticsController",
+    "Method": "GetLocationCount",
+    "RelativePath": "api/Statistics/GetLocationCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "TagCloudList",
+    "RelativePath": "api/TagCloud",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "CreateTagCloud",
+    "RelativePath": "api/TagCloud",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.TagCloudCommands.CreateTagCloudCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "RemoveTagCloud",
+    "RelativePath": "api/TagCloud",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "UpdateTagCloud",
+    "RelativePath": "api/TagCloud",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.TagCloudCommands.UpdateTagCloudCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "GetTagCloud",
+    "RelativePath": "api/TagCloud/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TagCloudController",
+    "Method": "GetTagCloudByBlogId",
+    "RelativePath": "api/TagCloud/GetTagCloudByBlogId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TestimonialController",
+    "Method": "TestimonialList",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TestimonialController",
+    "Method": "CreateTestimonial",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.TestimonialCommands.CreateTestimonialCoammand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TestimonialController",
+    "Method": "RemoveTestimonial",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TestimonialController",
+    "Method": "UpdateTestimonial",
+    "RelativePath": "api/Testimonial",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "CareBook.Application.Features.Mediator.Commands.TestimonialCommands.UpdateTestimonialCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CareBook.WebApi.Controllers.TestimonialController",
+    "Method": "GetTestimonial",
+    "RelativePath": "api/Testimonial/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

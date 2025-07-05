@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Prensentation\\CareBook.WebApi\\CareBook.WebApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

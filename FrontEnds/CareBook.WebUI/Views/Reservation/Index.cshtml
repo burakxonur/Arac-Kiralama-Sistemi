@@ -1,0 +1,80 @@
+﻿@model CreateReservationDto
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/UILayaout/Index.cshtml";
+}
+
+<div class="col-md-12 block-9 mb-md-5">
+
+	<form class="bg-light p-5 contact-form" method="post">
+		<h3 class="alert alert-success">Araç Kiralama Formu</h3>
+		<br />
+		
+			<input type="hidden" asp-for="CarID" value="@ViewBag.v3" class="form-control" placeholder="Almak İstediğiniz Araba">
+		
+		<div class="form-group">
+			<input type="text" asp-for="Name" class="form-control" placeholder="Adınız">
+		</div>
+		<div class="form-group">
+			<input type="text" asp-for="Surname" class="form-control" placeholder="Soyadınız">
+		</div>
+		<div class="form-group">
+			<input type="text" asp-for="Email" class="form-control" placeholder="Mail Adresiniz">
+		</div>
+		<div class="form-group">
+			<input type="text" asp-for="Phone" class="form-control" placeholder="Telefon Numarınız">
+		</div>
+		<div class="form-group">
+			<input type="text" asp-for="Age" class="form-control" placeholder="Yaşınız">
+		</div>
+		<div class="form-group">
+			<input type="text" asp-for="DriverLicenseYear" class="form-control" placeholder="Ehliyet Yılınız">
+		</div>
+		<div class="form-group">
+			<style>
+				select.form-control option {
+					background-color: #fff;
+					color: #000;
+				}
+			</style>
+
+
+			@Html.DropDownListFor(
+			x => x.DropOffLocationID,
+						new List<SelectListItem> {
+						new SelectListItem { Text = "Araçı Alacağınız Konumu Seçin", Value = "", Selected = true, Disabled = true }
+						}.Concat((List<SelectListItem>)ViewBag.v),
+						new { @class = "form-control", style = "width: 100%;" }
+						)
+
+		</div>
+		<div class="form-group">
+			<style>
+				select.form-control option {
+					background-color: #fff;
+					color: #000;
+				}
+			</style>
+
+
+			@Html.DropDownListFor(
+						x => x.PickUpLocationID,
+						new List<SelectListItem> {
+						new SelectListItem { Text = "Araçı Vereceginiz Konumu Seçin", Value = "", Selected = true, Disabled = true }
+						}.Concat((List<SelectListItem>)ViewBag.v),
+						new { @class = "form-control", style = "width: 100%;" }
+						)
+		</div>
+
+		
+		<div class="form-group">
+			<textarea asp-for="Description" id="" cols="30" rows="7" class="form-control" placeholder="Eklemek İstedikleriniz"></textarea>
+		</div>
+		<div class="form-group d-grid">
+			<input type="submit" value="Rezervasyonu Tamamla" class="btn btn-success py-3 px-5 w-100">
+		</div>
+
+	</form>
+
+</div>
+

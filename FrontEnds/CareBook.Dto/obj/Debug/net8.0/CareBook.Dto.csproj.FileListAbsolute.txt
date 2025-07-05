@@ -1,0 +1,11 @@
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\bin\Debug\net8.0\CareBook.Dto.deps.json
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\bin\Debug\net8.0\CareBook.Dto.dll
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\bin\Debug\net8.0\CareBook.Dto.pdb
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.AssemblyInfoInputs.cache
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.AssemblyInfo.cs
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.csproj.CoreCompileInputs.cache
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.dll
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\refint\CareBook.Dto.dll
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\CareBook.Dto.pdb
+C:\Users\onurb\source\repos\CareBook\FrontEnds\CareBook.Dto\obj\Debug\net8.0\ref\CareBook.Dto.dll

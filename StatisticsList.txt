@@ -1,0 +1,16 @@
+Araba Sayýsý
+Lokasyon Sayýsý
+Yazar Sayýsý
+Blog Sayýsý
+Marka Sayýsý
+Günlük Ortalama Araç Fiyatý
+Haftalýk Ortalama Araç Fiyatý
+Aylýk Ortalama Araç Fiyatý
+Otomatik Araba Sayýsý
+En Fazla Markalý Araç
+En Fazla Yorum Alan Bloð Baþlýðý
+1000 km düþük araç
+benzin veya dizel araçlar
+elektrilikli araçlar
+en pahalý araç
+en ucuz araç

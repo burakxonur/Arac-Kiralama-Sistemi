@@ -1,0 +1,17 @@
+﻿@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadUILayaoutComponentPartial");
+<body>
+	@await Component.InvokeAsync("_NavBarUILayaoutComponentPartial");
+	@await Component.InvokeAsync("_MainCoverImageUILayaoutComponentPartial");
+		@RenderBody()
+	@await Component.InvokeAsync("_FooterUILayaoutComponentPartial");
+	<!-- loader -->
+	@await Component.InvokeAsync("_SriptUILayaoutComponentPartial");
+</body>
+</html>
+
+

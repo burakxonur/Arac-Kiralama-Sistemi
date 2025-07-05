@@ -1,0 +1,78 @@
+﻿@model List<ResultCarPrcingListWithModelDto>
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/UILayaout/Index.cshtml";
+}
+
+<section class="ftco-section ftco-cart">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 ftco-animate">
+				<div class="car-list">
+					<table class="table">
+						<thead class="thead-primary">
+							<tr class="text-center">
+								<th>&nbsp;</th>
+								<th>&nbsp;</th>
+								<th class="bg-primary heading">Günlük</th>
+								<th class="bg-dark heading">Haftalık</th>
+								<th class="bg-black heading">Aylık</th>
+							</tr>
+						</thead>
+						@foreach (var item in Model)
+						{
+							<tbody>
+
+								<tr class="">
+									<td class="car-image"><div class="img" style="background-image:url(@item.CoverImageUrl);"></div></td>
+									<td class="product-name">
+										<h3>@item.Model</h3>
+										<p class="mb-0 rated">
+											<span>Puanı ::</span>
+											<span class="ion-ios-star"></span>
+											<span class="ion-ios-star"></span>
+											<span class="ion-ios-star"></span>
+											<span class="ion-ios-star"></span>
+											<span class="ion-ios-star"></span>
+										</p>
+									</td>
+
+									<td class="price">
+										<p class="btn-custom"><a href="#">Hemen Kirala</a></p>
+										<div class="price-rate">
+											<h3>
+												<span class="num"><small class="currency">₺</small> @item.dailyAmount</span>
+												<span class="per">/Günlük</span>
+											</h3>
+										</div>
+									</td>
+
+									<td class="price">
+										<p class="btn-custom"><a href="#">Hemen Kirala</a></p>
+										<div class="price-rate">
+											<h3>
+												<span class="num"><small class="currency">₺</small> @item.weekAmount</span>
+												<span class="per">/Haftalık</span>
+											</h3>
+										</div>
+									</td>
+
+									<td class="price">
+										<p class="btn-custom"><a href="#">Hemen Kirala</a></p>
+										<div class="price-rate">
+											<h3>
+												<span class="num"><small class="currency">₺</small> @item.mounthAmount</span>
+												<span class="per">/Aylık</span>
+											</h3>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						}
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

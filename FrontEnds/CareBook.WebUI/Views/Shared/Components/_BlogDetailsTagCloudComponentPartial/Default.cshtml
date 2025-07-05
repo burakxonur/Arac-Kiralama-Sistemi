@@ -1,0 +1,17 @@
+﻿@model List<CareBook.Dto.TagCloudDtos.GetByIDBlogTagCloudDto>
+<div class="sidebar-box ftco-animate">
+	<h3>Seo Etiket</h3>
+	<div class="tagcloud">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <a href="#" class="tag-cloud-link">@item?.Title</a>
+            }
+        }
+        else
+        {
+            <p>Etiket bulunamadı.</p>
+        }
+	</div>
+</div>

@@ -1,0 +1,11 @@
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\bin\Debug\net8.0\CareBook.Domain.deps.json
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\bin\Debug\net8.0\CareBook.Domain.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\bin\Debug\net8.0\CareBook.Domain.pdb
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.AssemblyInfoInputs.cache
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.AssemblyInfo.cs
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.csproj.CoreCompileInputs.cache
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\refint\CareBook.Domain.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\CareBook.Domain.pdb
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Domain\obj\Debug\net8.0\ref\CareBook.Domain.dll

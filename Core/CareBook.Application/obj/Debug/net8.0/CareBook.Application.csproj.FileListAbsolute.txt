@@ -1,0 +1,15 @@
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\bin\Debug\net8.0\CareBook.Application.deps.json
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\bin\Debug\net8.0\CareBook.Application.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\bin\Debug\net8.0\CareBook.Application.pdb
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\bin\Debug\net8.0\CareBook.Domain.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\bin\Debug\net8.0\CareBook.Domain.pdb
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.csproj.AssemblyReference.cache
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.AssemblyInfoInputs.cache
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.AssemblyInfo.cs
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.csproj.CoreCompileInputs.cache
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.4A99E10C.Up2Date
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\refint\CareBook.Application.dll
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\CareBook.Application.pdb
+C:\Users\onurb\source\repos\CareBook\Core\CareBook.Application\obj\Debug\net8.0\ref\CareBook.Application.dll

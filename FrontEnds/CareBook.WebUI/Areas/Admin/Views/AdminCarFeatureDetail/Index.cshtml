@@ -1,0 +1,43 @@
+﻿@model List<ResultCarFeatureByCarIDDto>
+@{
+    ViewData["Title"] = "Araç Özellikleri";
+    Layout = "~/Views/AdminLayaout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Araç Özellik Listesi</h4>
+                    <p class="card-subtitle mb-4">
+                        <code class="highlighter-rouge">
+                            Araç'a Ait Özellikleri Ekleyebilir ,Kaldırabilir veya Güncelleme İşlemi Yapabilirsiniz.
+                        </code>.
+                    </p>
+
+                   <form method="post" asp-controller="AdminCarFeatureDetail" asp-action="Index" asp-route-id="@ViewBag.CarID">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <input type="hidden" name="[@i].CarFeatureID" value="@Model[i].CarFeatureID" />
+        <input type="hidden" name="[@i].FeatureName" value="@Model[i].FeatureName" />
+
+        <input type="checkbox"
+               name="[@i].Available"
+               value="true"
+               @(Model[i].Available ? "checked" : "") />
+        <label>@Model[i].FeatureName</label>
+
+        <!-- Burası önemli: JS ile hidden false ekleyeceğiz sadece işaretli olmayanlara -->
+        <input type="hidden" name="[@i].Available" value="false" />
+        <br />
+    }
+
+    <button type="submit" class="btn btn-success d-block w-100 py-3 fs-4 fw-bold">Değişiklikleri Kaydet</button>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

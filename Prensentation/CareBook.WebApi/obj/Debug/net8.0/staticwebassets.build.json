@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5tRjqhqnfgfCf6g2FLQ+JZcifo37Oye1ScO+A4Yqzmw=",
+  "Source": "CareBook.WebApi",
+  "BasePath": "_content/CareBook.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
